@@ -64,8 +64,8 @@ namespace CapaPresentacion
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            txt_NombreUsuario.Text = "";
-            txt_Contrasena.Text = "";
+            txtPass.Text = "";
+            txtUser.Text = "";
         }
     }
 }
