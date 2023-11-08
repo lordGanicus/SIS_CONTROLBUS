@@ -43,8 +43,8 @@ namespace CapaNegocio
         {
             // Lógica para buscar un chofer por su nombre de usuario
             // Debes acceder a la capa de datos para realizar la consulta a la base de datos
-            D_Chofer dChofer = new D_Chofer();
-            DataTable tabla = dChofer.BuscarPorNombre(nombre);
+            
+            DataTable tabla = _Chofer.BuscarPorNombre(nombre);
 
             if (tabla.Rows.Count > 0)
             {
