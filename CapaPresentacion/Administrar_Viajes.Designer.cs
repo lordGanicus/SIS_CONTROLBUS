@@ -426,7 +426,7 @@ namespace CapaPresentacion
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 60D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(549, 38);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(649, 31);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.SystemColors.MenuHighlight;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.SystemColors.MenuHighlight;

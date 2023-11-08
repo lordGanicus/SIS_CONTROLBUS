@@ -30,8 +30,8 @@
         {
             this.Usuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.TopFormulario = new System.Windows.Forms.Panel();
             this.btn_Cerrar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,21 +61,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(308, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 40);
-            this.textBox1.TabIndex = 2;
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(308, 116);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(193, 40);
+            this.txtUser.TabIndex = 2;
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(308, 254);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 40);
-            this.textBox2.TabIndex = 3;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(308, 254);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(193, 40);
+            this.txtPass.TabIndex = 3;
             // 
             // TopFormulario
             // 
@@ -196,8 +196,8 @@
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Guardar);
             this.Controls.Add(this.TopFormulario);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Usuario);
             this.MaximizeBox = false;
@@ -223,8 +223,8 @@
 
         private System.Windows.Forms.Label Usuario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Panel TopFormulario;
         private System.Windows.Forms.PictureBox btn_Cerrar;
         private System.Windows.Forms.Label label1;

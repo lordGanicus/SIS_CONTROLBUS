@@ -34,8 +34,8 @@ namespace CapaPresentacion
         {
             try
             {
-                string nombreChofer = txt_NombreUsuario.Text;
-                string cedula = txt_Contrasena.Text;
+                string nombreChofer = txtUser.Text;
+                string cedula = txtPass.Text;
 
                 // Instanciar un objeto de la capa de negocio para manejar los choferes
                 N_Chofer nChofer = new N_Chofer();
