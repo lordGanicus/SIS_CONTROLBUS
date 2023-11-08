@@ -54,7 +54,6 @@ namespace CapaDatos
 
             return acceso.Escribir("SP_ELIMINAR_CHOFER", parametros);
         }
-
         public DataTable BuscarPorNombre(string nombre)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();

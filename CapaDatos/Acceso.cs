@@ -49,6 +49,23 @@ namespace CapaDatos
             return comando;
         }
 
+        public DataTable Leer(string nombre, List<SqlParameter> parametros)
+        {
+            Abrir();
+
+            DataTable tabla = new DataTable();
+            SqlDataAdapter adaptador = new SqlDataAdapter();
+
+            adaptador.SelectCommand = CrearComando(nombre);
+
+            adaptador.Fill(tabla);
+
+            adaptador = null;
+            Cerrar();
+
+            return tabla;
+        }
+
         public DataTable Leer(string nombre)
         {
             Abrir();
@@ -114,5 +131,7 @@ namespace CapaDatos
             parametro.DbType = DbType.DateTime;
             return parametro;
         }
+
+        
     }
 }
