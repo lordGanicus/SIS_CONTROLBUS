@@ -74,6 +74,12 @@
     <Compile Include="Administrar_Viajes.Designer.cs">
       <DependentUpon>Administrar_Viajes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sistema_Autobuses.cs">
       <SubType>Form</SubType>
     </Compile>
