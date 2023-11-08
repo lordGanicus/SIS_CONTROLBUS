@@ -151,5 +151,10 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void Formulario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
