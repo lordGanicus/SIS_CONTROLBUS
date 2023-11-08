@@ -62,6 +62,7 @@ namespace CapaPresentacion
             this.btn_Editar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MoverFormulario = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.TopFormulario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cerrar)).BeginInit();
             this.Formulario.SuspendLayout();
@@ -117,6 +118,7 @@ namespace CapaPresentacion
             // 
             // Formulario
             // 
+            this.Formulario.Controls.Add(this.bunifuFlatButton1);
             this.Formulario.Controls.Add(this.btnGuardar);
             this.Formulario.Controls.Add(this.btn_Reset);
             this.Formulario.Controls.Add(this.txt_ID);
@@ -534,6 +536,40 @@ namespace CapaPresentacion
             this.MoverFormulario.TargetControl = this.TopFormulario;
             this.MoverFormulario.Vertical = true;
             // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuFlatButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "reporte bus";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = global::CapaPresentacion.Properties.Resources.Nuevo;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 60D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(614, 28);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(143, 42);
+            this.bunifuFlatButton1.TabIndex = 43;
+            this.bunifuFlatButton1.Text = "reporte bus";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // Administrar_Autobus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -600,5 +636,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox btn_Cerrar;
         private Bunifu.Framework.UI.BunifuDragControl MoverFormulario;
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }
