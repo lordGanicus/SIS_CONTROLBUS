@@ -39,5 +39,25 @@ namespace CapaNegocio
         {
             return _Chofer.Listar();
         }
+        public E_Chofer BuscarPorNombre(string nombre)
+        {
+            // Lógica para buscar un chofer por su nombre de usuario
+            // Debes acceder a la capa de datos para realizar la consulta a la base de datos
+            D_Chofer dChofer = new D_Chofer();
+            DataTable tabla = dChofer.BuscarPorNombre(nombre);
+
+            if (tabla.Rows.Count > 0)
+            {
+                DataRow fila = tabla.Rows[0];
+                int id = Convert.ToInt32(fila["ID"]);
+                string nombreChofer = fila["NOMBRE"].ToString();
+                string apellido = fila["APELLIDO"].ToString();
+                DateTime fechaNacimiento = Convert.ToDateTime(fila["FECHA_NACIMIENTO"]);
+                string cedula = fila["CEDULA"].ToString();
+
+                return new E_Chofer(id, nombreChofer, apellido, fechaNacimiento, cedula);
+            }
+            return null; // Retorna null si no se encuentra el chofer
+        }
     }
 }
